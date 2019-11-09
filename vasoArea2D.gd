@@ -29,16 +29,16 @@ func _ready():
 	
 	
 	if typearea ==0:
-		var bullet_tex1 = preload("res://assest/1.jpeg")
+		var bullet_tex1 = preload("res://assets-items/papel/sprites-06.png")
 		self.get_child(0).get_child(0).set_texture(bullet_tex1)
 	if typearea ==1:
-		var bullet_tex1 = preload("res://assest/2.jpeg")
+		var bullet_tex1 = preload("res://assets-items/vidrio/sprites-08.png")
 		self.get_child(0).get_child(0).set_texture(bullet_tex1)
 	if typearea ==2:
-		var bullet_tex1 = preload("res://assest/3.jpeg")
+		var bullet_tex1 = preload("res://assets-items/organico/sprites-11.png")
 		self.get_child(0).get_child(0).set_texture(bullet_tex1)
 	if typearea ==3:
-		var bullet_tex1 = preload("res://assest/4.jpeg")
+		var bullet_tex1 = preload("res://assets-items/plastico/sprites-07.png")
 		self.get_child(0).get_child(0).set_texture(bullet_tex1)		
 
 
