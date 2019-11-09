@@ -59,19 +59,30 @@ z_index = 100
 texture = ExtResource( 5 )
 
 [node name="ok" type="Node2D" parent="."]
-position = Vector2( -153.066, -148.283 )
+position = Vector2( -78.9248, -26.3083 )
 
 [node name="Sprite5" type="Sprite" parent="ok"]
 position = Vector2( 736.67, 81.4907 )
 scale = Vector2( 0.608212, 0.590865 )
 texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
 
-[node name="not" type="Node2D" parent="."]
+[node name="Timerok" type="Timer" parent="ok"]
 
-[node name="Sprite6" type="Sprite" parent="not"]
+[node name="notok" type="Node2D" parent="."]
+position = Vector2( 59.7915, 136.325 )
+
+[node name="Sprite6" type="Sprite" parent="notok"]
 position = Vector2( 694.179, -81.1589 )
 scale = Vector2( 0.586446, 0.539723 )
 texture = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Timernot" type="Timer" parent="notok"]
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 1.5
@@ -84,4 +95,6 @@ z_index = -100
 texture = ExtResource( 8 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+[connection signal="timeout" from="ok/Timerok" to="." method="_on_Timerok_timeout"]
+[connection signal="timeout" from="notok/Timernot" to="." method="_on_Timernot_timeout"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

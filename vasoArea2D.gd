@@ -68,11 +68,13 @@ func _on_Area2D_input_event(viewport, event, shape_idx):
 			if typearea +1 == int(event.position.x) / int(get_viewport().size.x/5):
 				
 				print ("bien")
+				Globals.showok = true
 				Globals.points += 10
 				#get_node("punto")
 				#get_node("Sprite6").set
 			else:
 				Globals.points -= 10
+				Globals.shownotok = true
 				print ("mal")
 				#get_node("Sprite5").hide()
 			
