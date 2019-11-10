@@ -76,6 +76,7 @@ text = "0
 "
 
 [node name="ok" type="Node2D" parent="."]
+editor/display_folded = true
 position = Vector2( -78.9248, -26.3083 )
 
 [node name="Sprite5" type="Sprite" parent="ok"]
@@ -114,6 +115,7 @@ position = Vector2( 541.491, 247.89 )
 scale = Vector2( 0.3, 0.3 )
 z_index = -10
 frames = SubResource( 2 )
+frame = 10
 speed_scale = 2.0
 playing = true
 
@@ -123,7 +125,7 @@ playing = true
 position = Vector2( 518.374, 290.69 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 4 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="cinta" type="Node" parent="."]
@@ -132,7 +134,6 @@ playing = true
 position = Vector2( 508.35, 376.609 )
 scale = Vector2( 0.4, 0.3 )
 frames = SubResource( 3 )
-frame = 1
 speed_scale = 2.0
 playing = true
 

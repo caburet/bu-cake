@@ -26,24 +26,41 @@ func _ready():
 		pass
 		#print ("genero basura  3")
 	
-	
+	#const pre1 = "res://assets-items/papel/sprites-1.png"
+	#const pre2 = "res://assets-items/papel/sprites-2.png"
+	#const pre3 = "res://assets-items/papel/sprites-3.png"
+
 	
 	if typearea ==0:
-		var bullet_tex1 = preload("res://assets-items/papel/sprites-06.png")
+		rng.randomize()
+		var numero0 = str(rng.randi_range(1, 3))
+
+		var bullet_tex1 = load("res://assets-items/papel/sprites-"+numero0+".png")
 		self.get_child(0).get_child(0).set_texture(bullet_tex1)
+		#---------------------------------------------------------------------------------
 	if typearea ==1:
-		var bullet_tex1 = preload("res://assets-items/vidrio/sprites-08.png")
+		rng.randomize()
+		var numero1 = str(rng.randi_range(1, 3))
+		
+		var bullet_tex1 = load("res://assets-items/vidrio/sprites-"+numero1+".png")
 		self.get_child(0).get_child(0).set_texture(bullet_tex1)
+		#-----------------------------------------------------------------------------
 	if typearea ==2:
-		var bullet_tex1 = preload("res://assets-items/organico/sprites-11.png")
+		rng.randomize()
+		var numero2 = str(rng.randi_range(1, 3))
+		
+		var bullet_tex1 = load("res://assets-items/organico/sprites-"+numero2+".png")
 		self.get_child(0).get_child(0).set_texture(bullet_tex1)
+		#-----------------------------------------------------------------------------
 	if typearea ==3:
-		var bullet_tex1 = preload("res://assets-items/plastico/sprites-07.png")
+		rng.randomize()
+		var numero3 = str(rng.randi_range(1, 3))
+		
+		var bullet_tex1 = load("res://assets-items/plastico/sprites-"+numero3+".png")
 		self.get_child(0).get_child(0).set_texture(bullet_tex1)		
 
 
 var clicked = false
-
 
 #----------------------------------------------------------------------------------
 func _physics_process(delta):

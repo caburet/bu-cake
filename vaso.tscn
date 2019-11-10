@@ -11,7 +11,7 @@ radius = 31.2792
 script = ExtResource( 1 )
 
 [node name="Area2D" type="Area2D" parent="."]
-position = Vector2( 1.62903, 261.457 )
+position = Vector2( 1.62905, 299.976 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
